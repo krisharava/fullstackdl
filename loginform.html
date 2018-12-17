@@ -1,0 +1,40 @@
+<html>
+        <head>
+                <h1 style="text-align: center;color: red">login</h1>
+            </head>
+        
+             
+            <body>
+                   
+                
+                <center> <form>
+                       username: <input type="text" id="username"><br><br>
+                       password: <input type="password" id="password"><br><br>
+                       
+                       <input type="checkbox" id="tandc">remember me<br><br>
+                       <button onclick="dataHandler()">sign in</button>
+                    
+                    </form>
+                    </center>
+        
+                
+        
+                    <script>
+                         function dataHandler(){
+                             event .preventDefault();
+                             var username=getValueUsingID("username");
+                             var password=getValueUsingID("password");
+                             
+                             
+        
+                             alert(username +"\t " + password );
+                         }
+        
+                         function getValueUsingID(id){
+                             return document.getElementById(id).value;
+                         }
+                    
+                    </script>
+                    
+            </body>
+</html>

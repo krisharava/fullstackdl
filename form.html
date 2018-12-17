@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <h1 style="text-align: center;color: red">Registration Form</h1>
+    </head>
+
+     
+    <body>
+           
+        
+        <center> <form>
+               username: <input type="text" id="username"><br><br>
+               password: <input type="password" id="password"><br><br>
+               email   : <input type="email"    id="email" ><br><br>
+               Dob     : <input type="date"     id="date"  ><br><br>
+               male    : <input type="radio"  name="gender" value="male">
+               female  : <input type="radio"  name="gender" value="female"><br><br>
+               quaification: <select id="qualification">
+                           <option value="btech">btech</option>
+                           <option value="mtech">mtech</option>
+                           <option value="mca">mca</option>
+               </select><br><br>
+               <input type="checkbox" id="tandc">i agree to terms and conditions<br><br>
+               <button onclick="dataHandler()">register me  !!</button>
+            
+            </form>
+            </center>
+
+        
+
+            <script>
+                 function dataHandler(){
+                     event .preventDefault();
+                     var username=getValueUsingID("username");
+                     var password=getValueUsingID("password");
+                     var email=getValueUsingID("email");
+                     
+
+                     alert(username +"\t " + password +"\t" + email);
+                 }
+
+                 function getValueUsingID(id){
+                     return document.getElementById(id).value;
+                 }
+            
+            </script>
+            
+    </body>
+</html>

@@ -1,0 +1,229 @@
+<html>
+        
+    <head>
+            
+            <marquee>** NOTE : this site is under maintinance **</marquee>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Digital lync</title>
+        
+        
+        
+        <h1 style="
+        
+        text-align:center;
+        background-color:yellow;
+        color:black;">Digital Lync</h1>
+        <h1 style="text-align:center; color:black">Employee info</h1>
+        <style>
+                th{
+                    color: white;
+                    background-color:black;
+                    font-size:100%;
+                }
+    
+                td{
+                    text-align: center;
+                }
+            </style>
+            <style>
+                form{
+                    width: 100%;
+                    text-align: left;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    
+                     
+                    
+                }
+            </style>
+            <style type="text/css";>
+            .wrap{
+                background-color: cadetblue;
+            }
+            .left{
+                width:480px;
+                background-color:white;
+                height:123px;
+                float:left;
+            }
+            .right{
+                width:480px;
+                background-color:white;
+                height:200px;
+                float:right;
+            }
+            </style>
+
+    </head>
+    <body>
+        
+        
+        <img
+            style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 90%;
+          "
+           src="dl.jpg">
+
+           <h2  style="
+           text-align: center;
+           background-color: black;
+           color: wheat
+           ">Watch what we do!!</h2>
+
+           
+
+           <iframe style="display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 90%;
+           height: 90%;"
+src="https://www.youtube.com/embed/3qatPd0198o?autoplay=1">
+</iframe><br><br>
+
+
+<h1 style="text-align:center; color:black">Digital lync offering courses</h1>
+
+<center>
+        <table border="2" higth="40%"width="100%">
+
+          <tr>
+              <th>Course</th>
+              <th>Duration</th>
+              <th>Fee</th>
+              <th>Installments</th>
+              <th>Time</th>
+          </tr>
+          <tr bgcolor="#ff00ff">
+              <td>fullstack</td>
+              <td>3 months</td>
+              <td>30k</td>
+              <td>2</td>
+              <td>7.30 am</td>
+          </tr>
+          <tr bgcolor="#00ff00">
+              <td>backend</td>
+              <td>1 months</td>
+              <td>12k</td>
+              <td>1</td>
+              <td>10.30 am</td>
+          </tr>
+          <tr bgcolor="#0000ff">
+              <td>devops</td>
+              <td>2 months</td>
+              <td>15k</td>
+              <td>1</td>
+              <td>8.30 am</td>
+          </tr>
+          <tr bgcolor="#ffffff">
+              <td>bigdata</td>
+              <td>2 months</td>
+              <td>20k</td>
+              <td>2</td>
+              <td>11.30 am</td>
+          </tr>
+          <tr bgcolor="#ff0000">
+              <td>digital marketing</td>
+              <td>30 days</td>
+              <td>220k</td>
+              <td>2</td>
+              <td>1.30 pm</td>
+          </tr>
+          <tr bgcolor="#ffff00">
+              <td>python</td>
+              <td>45 days</td>
+              <td>24k</td>
+              <td>2</td>
+              <td>3.30 p m</td>
+          </tr>
+        </table>
+      </center><br><br>
+             
+
+             
+             <div id="wrap">
+                 <div class="left">
+             <center> <form >
+                    <h1 style="text-align: left;color: red">Sign up</h1><br><br>
+                    username: <input type="text" id="username"><br><br>
+                    password: <input type="password" id="password"><br><br>
+                    email   : <input type="email"    id="email" ><br><br>
+                    Dob     : <input type="date"     id="date"  ><br><br>
+                    male    : <input type="radio"  name="gender" value="male">
+                    female  : <input type="radio"  name="gender" value="female"><br><br>
+                    quaification: <select id="qualification">
+                                <option value="btech">btech</option>
+                                <option value="mtech">mtech</option>
+                                <option value="mca">mca</option>
+                    </select><br><br>
+                    <input type="checkbox" id="tandc">i agree to terms and conditions<br><br>
+                    <button onclick="dataHandler()">register me  !!</button>
+                 
+                 </form>
+                 </center>
+     
+             
+     
+                 <script>
+                      function dataHandler(){
+                          event .preventDefault();
+                          var username=getValueUsingID("username");
+                          var password=getValueUsingID("password");
+                          var email=getValueUsingID("email");
+                          
+     
+                          alert(username +"\t " + password +"\t" + email);
+                      }
+     
+                      function getValueUsingID(id){ 
+                          return document.getElementById(id).value;
+                      }
+                 
+                 </script>
+                 </div>
+                 <div class="right">
+                        
+
+                        <center> <form>
+                                <h1 style="text-align: center;color: red">Sign in</h1><br><br>
+                                username: <input type="text" id="username"><br><br>
+                                password: <input type="password" id="password"><br><br>
+                                
+                                <input type="checkbox" id="tandc">remember me<br><br>
+                                <button onclick="dataHandler()">sign in</button>
+                             
+                             </form>
+                             </center>
+                 
+                         
+                 
+                             <script>
+                                  function dataHandler(){
+                                      event .preventDefault();
+                                      var username=getValueUsingID("username");
+                                      var password=getValueUsingID("password");
+                                      
+                                      
+                 
+                                      alert(username +"\t " + password );
+                                  }
+                 
+                                  function getValueUsingID(id){
+                                      return document.getElementById(id).value;
+                                  }
+                             
+                             </script>
+                 </div>
+                 </div>
+</body>
+
+
+
+    
+</html>
